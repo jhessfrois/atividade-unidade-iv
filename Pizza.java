@@ -1,5 +1,3 @@
-package projeto;
-
 import java.util.List;
 
 public class Pizza {

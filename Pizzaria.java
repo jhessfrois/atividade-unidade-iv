@@ -1,7 +1,4 @@
-package projeto;
-
 import java.util.*;
-import projeto.Pizza.tamanhoPizza;
 
 public class Pizzaria {
     public static void main(String[] args) {
@@ -86,7 +83,7 @@ public class Pizzaria {
         while (continuar) {
             x = 1;
             System.out.println("Selecione um tamanho: ");
-            for (tamanhoPizza t : Pizza.tamanhoPizza.values()) {
+            for (Pizza.tamanhoPizza t : Pizza.tamanhoPizza.values()) {
                 System.out.println(x + ". " + t);
                 x++;
             }
@@ -118,7 +115,7 @@ public class Pizzaria {
                 saboresSelect.add(saboresList.get(opcaoSabor-1));
             }
 
-            Pizza pizza = new Pizza(saboresSelect, cardapio.getPrecoJusto(saboresSelect), tamanhoPizza.getByIndex(tamanho));
+            Pizza pizza = new Pizza(saboresSelect, cardapio.getPrecoJusto(saboresSelect), Pizza.tamanhoPizza.getByIndex(tamanho));
             pizzas.add(pizza);
 
             System.out.print("Deseja cadastrar mais uma pizza? (1-Sim, 2-Não): ");
@@ -177,7 +174,7 @@ public class Pizzaria {
                 String novoSabor = scanner.nextLine();
                 List<String> sabores = new ArrayList<>();
                 sabores.add(novoSabor);
-                Pizza novaPizza = new Pizza(sabores, 30.0, tamanhoPizza.MEDIA);
+                Pizza novaPizza = new Pizza(sabores, 30.0, Pizza.tamanhoPizza.MEDIA);
                 pedidoEncontrado.adicionarPizza(novaPizza);
                 break;
             case 2:
