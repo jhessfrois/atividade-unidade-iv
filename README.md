@@ -1,6 +1,6 @@
 <p align="center">
   <img alt="Logo Faculdade Unyleya" src="https://portalgraduacao.unyleya.edu.br/b50f33bcb2dd5f603598a7d6dcc4c58c.png" width="200px" />
-</p>
+</p> 
 
 <p align="center">
 Atividades referente à Unidade IV de Algoritmos e Estrutura de Dados.
